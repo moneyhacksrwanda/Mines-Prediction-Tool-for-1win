@@ -1,0 +1,5 @@
+{
+  "name": "Mines Prediction Tool",
+  "description": "A modern, responsive, client-side Mines Prediction Tool tuned for 1win, featuring a polished glassmorphism/neon UI, deterministic seed support, and configuration options.",
+  "requestFramePermissions": []
+}

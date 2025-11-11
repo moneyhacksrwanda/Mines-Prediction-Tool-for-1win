@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mines Prediction Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-dark': '#151721',
+              'brand-dark-secondary': '#1e293b',
+              'brand-tile': '#2e6b89',
+              'brand-tile-light': '#3c82a3',
+              'brand-border': '#3a4c6c',
+              'brand-accent-blue': '#3b82f6',
+            },
+            boxShadow: {
+              'tile-hidden': 'inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -1px 1px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.5)',
+              'tile-revealed': 'inset 0 2px 4px rgba(0,0,0,0.6)',
+            },
+            keyframes: {
+              'pop-in': {
+                '0%': { transform: 'scale(0.5)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              }
+            },
+            animation: {
+              'pop-in': 'pop-in 0.3s ease-out forwards',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="antialiased text-slate-200 bg-brand-dark">
+    <div id="root"></div>
+  </body>
+</html>
